@@ -1,5 +1,9 @@
 # Change Log
 
+## [4.3.0] - 2019-06-18
+### Added
+- Dynamic SVG sprite mode
+
 ## [4.2.1] - 2017-02-07
 ### Fixed
 - Preserve source of original declarations - See #90
