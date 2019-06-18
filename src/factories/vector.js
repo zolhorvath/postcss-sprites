@@ -22,17 +22,18 @@ export default function run(opts, images) {
 		multiArgs: true
 	})().spread((result, data) => {
 		const spritesheet = {};
+		const mode = opts.svgSpriteMode;
 
 		spritesheet.extension = 'svg';
 		spritesheet.coordinates = {};
-		spritesheet.image = result.css.sprite.contents;
+		spritesheet.image = result[mode].sprite.contents;
 		spritesheet.properties = {
-			width: data.css.spriteWidth,
-			height: data.css.spriteHeight
+			width: data[mode].spriteWidth,
+			height: data[mode].spriteHeight
 		};
 
 
-		data.css.shapes.forEach((shape) => {
+		data[mode].shapes.forEach((shape) => {
 			spritesheet.coordinates[new Buffer(shape.name, 'base64').toString()] = {
 				width: shape.width.outer,
 				height: shape.height.outer,

@@ -181,6 +181,13 @@ Built-in filters:
 
 > A [svg-sprite](https://github.com/jkphl/svg-sprite#configuration-basics) configuration.
 
+###### svgSpriteMode
+
+> SVG sprite mode to use for generating svg sprites.
+
+- Default: `css`
+- Required: `false`
+
 ###### verbose
 
 > Prints the plugin output to the console.

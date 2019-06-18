@@ -70,6 +70,7 @@ export const defaults = {
 			precision: 5
 		}
 	},
+	svgSpriteMode: 'css',
 	verbose: false
 };
 
