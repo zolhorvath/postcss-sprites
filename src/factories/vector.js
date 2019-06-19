@@ -32,9 +32,8 @@ export default function run(opts, images) {
 			height: data[mode].spriteHeight
 		};
 
-
 		data[mode].shapes.forEach((shape) => {
-			spritesheet.coordinates[new Buffer(shape.name, 'base64').toString()] = {
+			spritesheet.coordinates[opts.shapePathFromId(shape.name)] = {
 				width: shape.width.outer,
 				height: shape.height.outer,
 				x: shape.position.absolute.x,

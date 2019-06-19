@@ -70,7 +70,13 @@ export const defaults = {
 			precision: 5
 		}
 	},
+
 	svgSpriteMode: 'css',
+
+	shapePathFromId: function (shapeId) {
+		return new Buffer(shapeId, 'base64').toString();
+	},
+
 	verbose: false
 };
 
