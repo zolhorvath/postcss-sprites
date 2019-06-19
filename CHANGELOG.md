@@ -1,5 +1,9 @@
 # Change Log
 
+## [4.4.0] - 2019-06-19
+### Added
+- Dynamic SVG identifiers
+
 ## [4.3.0] - 2019-06-18
 ### Added
 - Dynamic SVG sprite mode
