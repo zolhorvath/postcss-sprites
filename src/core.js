@@ -70,6 +70,11 @@ export const defaults = {
 			precision: 5
 		}
 	},
+
+	shapePathFromId: function (shapeId) {
+		return new Buffer(shapeId, 'base64').toString();
+	},
+
 	verbose: false
 };
 

@@ -181,6 +181,16 @@ Built-in filters:
 
 > A [svg-sprite](https://github.com/jkphl/svg-sprite#configuration-basics) configuration.
 
+###### shapePathFromId
+
+> Function that returns the absolute path to the original source of the SVG
+  asset. The only param is the name (id) of the shape.
+
+- Default: ```function (shapeId) {
+  return new Buffer(shapeId, 'base64').toString();
+}```
+- Required: `false`
+
 ###### verbose
 
 > Prints the plugin output to the console.
